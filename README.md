@@ -21,6 +21,12 @@ Welcome to the Zywa Backend Engineer Assignment, where I contribute to the makin
     + [Build the Docker Image](#build-the-docker-image)
     + [Run the Container](#run-the-container)
     + [Access the Application](#access-the-application)
+  * [Framework/Language Choice 🛠️](#frameworklanguage-choice-🛠️)
+    + [Why Python and Flask?](#why-python-and-flask)
+    + [Why PostgreSQL?](#why-postgresql)
+  * [Architectural Decisions 🏛️](#architectural-decisions-🏛️)
+    + [Data Handling and API Design](#data-handling-and-api-design)
+  * [Possible Improvements ✨](#possible-improvements-✨)
   * [License 📜](#license-📜)
   * [Acknowledgements 👏🏾](#acknowledgements-👏🏾)
 
@@ -136,6 +142,24 @@ http://localhost:5000
 ```
 
 You should now see the Card Status API web interface, ready for you to use!
+
+## Framework/Language Choice 🛠️
+### Why Python and Flask?
+- Python: I chose it for its simplicity and because it has a ton of libraries, such as Pandas for CSV manipulation which I used. Also because well I am comfortable coding with python.   
+- Flask: Super straightforward and and it's flexible enough to let the project grow organically if it needs to be expanded upon.  
+
+### Why PostgreSQL?
+- Reliable: As a relational databases it was a good options since the data structure seemed to be well-defined and relational.   
+- Compliance: PostgreSQL can handle complex queries even though it's not the case for this particular api, it could be useful for expanding.  
+
+## Architectural Decisions 🏛️
+### Data Handling and API Design
+- Separation of Concerns: The application logic is separated from the data layer. I mean Flask routes handle HTTP requests, while database interactions are abstracted behind clear interfaces.   
+- RESTful API Design: The API follows REST principles, easy to navigate for the internal tems, and makes getting what you need effortless.  
+
+## Possible Improvements ✨
+- Asynchronous Processing: With larger CSV files, processing the data asynchronously could improve performance.  
+- Docker Compose: The way I implemented it now uses Docker for deploying rhe application but doesn't handle the database part. But with Docker Compose, both the application and database containers would simplify configuration and make everything work together even smoother.  
 
 ## License 📜
 This project is proudly licensed under the MIT License. For more details, see the LICENSE file.
