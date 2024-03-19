@@ -1,0 +1,49 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    margin: 10px 20px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    background-size: 200% auto; 
+    transition: background-position 0.5s;
+}
+
+.green-btn {
+    background-image: linear-gradient(to right, purple, pink);
+}
+
+.red-btn {
+    background-image: linear-gradient(to right, pink, purple);
+}
+
+.green-btn:hover, .red-btn:hover {
+    background-position: right center; 
+}
+
+.status-display {
+    margin-top: 20px;
+    display: block; 
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}

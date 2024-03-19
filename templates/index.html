@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Status Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="buttons-container">
+            <button id="userMobileBtn" class="green-btn">user mobile</button>
+            <button id="cardIdBtn" class="red-btn">card id</button>
+        </div>
+        <div id="statusDisplay" class="status-display"></div>
+    </div>      
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
