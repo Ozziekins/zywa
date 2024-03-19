@@ -57,13 +57,13 @@ Make sure you have these installed:
 
 1. **Clone this repository**:
     ```bash
-    git clone https://example.com/zywa.git
+    git clone https://github.com/Ozziekins/zywa
     cd zywa
     ```
 
 2. **Create and activate a virtual environment** (optional but recommended):
     ```bash
-    python -m venv venv
+    python3 -m venv venv
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
     ```
 
