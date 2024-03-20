@@ -154,8 +154,8 @@ You should now see the Card Status API web interface, ready for you to use!
 
 ## Architectural Decisions 🏛️
 ### Data Handling and API Design
-- Separation of Concerns: The application logic is separated from the data layer. I mean Flask routes handle HTTP requests, while database interactions are abstracted behind clear interfaces.   
-- RESTful API Design: The API follows REST principles, easy to navigate for the internal tems, and makes getting what you need effortless.  
+- Separation: The application logic is separated from the data layer. I mean Flask routes handle HTTP requests, while database interactions are abstracted behind clear interfaces.   
+- RESTful API: The API follows REST principles, easy to navigate for the internal tems, and makes getting what you need effortless.  
 
 ## Possible Improvements ✨
 - Asynchronous Processing: With larger CSV files, processing the data asynchronously could improve performance.  
